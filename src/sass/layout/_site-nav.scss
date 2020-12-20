@@ -1,0 +1,90 @@
+.site-nav-top {
+  background-color: $color-offwhite;
+  border-top: 3vh solid $color-purple;
+  font-weight: 700; 
+  padding: 1.5vh 10vw 0 10vw;
+  text-transform: uppercase;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0; 
+    opacity: 1;
+    padding: 0;
+  }
+
+  li:first-child {
+    font-family: "omnium";
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 0.9;
+    margin-right: auto; 
+    padding-top: 0; 
+  }
+
+  li {
+    font-size: 14px;
+
+    +li {
+      a {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  a {
+    border-bottom: 2px dashed transparent;
+    color: $color-text-body;
+    display: block;
+    margin-right: 1vh;
+    opacity: 0.5;
+    padding-top: 1vh;
+    text-decoration: none;
+    transition: $transition-default;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: rgba($color-purple, 70%);
+    }
+  }
+
+  [aria-current] a {
+    opacity: 1;
+    cursor: default;
+  }
+}
+
+.site-nav-bottom {
+  font-size: 28px; 
+  font-weight: 500;
+  margin: 0;
+  padding: 10vh 10vw; 
+  //border: 2px solid $color-purple; 
+}
+
+.site-nav-bottom-content {
+  display: flex; 
+  flex-wrap: wrap;
+  
+  a {
+    border: 2px solid $color-purple; 
+    border-radius: 12px; 
+    color: $color-text-body;
+    display: block; 
+    text-decoration: none;
+    padding: 1vh 2vw;
+    margin: 0.5vh; 
+    transition: 0.3s; 
+
+    &:hover,
+    &:focus {
+      background-color: $color-purple; 
+      color: $color-offwhite; 
+    }
+
+    &[aria-current] {
+      background-color: $color-purple; 
+      color: $color-offwhite; 
+    }
+  }
+}

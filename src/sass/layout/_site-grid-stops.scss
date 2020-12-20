@@ -1,0 +1,89 @@
+.sit-grid {
+    display: grid; 
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 1rem; 
+    width: 100%; 
+}
+
+.header-stops-wrapper {
+    grid-column: 1 / 9;
+    grid-row: 1; 
+}
+
+.content-stops-wrapper {
+    grid-column: 1 / 8;
+    grid-row: 2; 
+}
+
+.link-allmaps-download {
+    //border: 2px solid $color-purple; 
+    grid-column: 9 / 12;
+    grid-row: 1; 
+
+    p {
+    font-size: $font-size-header-link;
+    margin: 0;
+    padding: 0;
+    }
+}
+
+button svg {
+    fill: $color-offwhite; 
+    height: 2em;
+  }
+  
+  [aria-expanded="true"] .vert {
+    display: none;
+  }
+
+.u-button-reset {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: $color-offwhite; 
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    outline: 0;
+    padding: 0;
+    text-align: inherit;
+  }
+
+  .js-accordion {
+    dl {
+        display: grid;
+        font-size: $font-size-list;
+        grid-template-columns: 20% 80%;
+        margin-top: 0;  
+        padding: 0;
+
+        p {  
+            font-size: $font-size-header-link;
+            font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 2vh;  
+        }
+    }
+  }
+
+.card-accordian-green {
+    background-color: $color-mint;
+    color: $color-offwhite;
+}
+
+.card-accordian-orange {
+    background-color: $color-yellow; 
+    color: $color-offwhite; 
+}
+
+.card-accordian-purple {
+    background-color: $color-magenta; 
+    color: $color-offwhite; 
+}
+
+.card-accordian-banner {
+    background-color: $color-navy; 
+    color: $color-offwhite; 
+}
+  
