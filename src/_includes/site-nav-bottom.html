@@ -1,0 +1,10 @@
+  <nav class="site-nav-bottom">
+      <div class="site-nav-bottom-content">
+
+        {% for item in siteData.navSecondary %}
+          <a href="{{ item.url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>
+            {{ item.title }}
+        </a>
+        {% endfor %}
+      </div>
+    </nav>

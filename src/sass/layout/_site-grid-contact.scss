@@ -1,0 +1,63 @@
+.site-grid {
+    display: grid; 
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 1rem; 
+    width: 100%; 
+}
+
+.header-contact-wrapper {
+    grid-column: 1 / 12;
+    grid-row: 1; 
+}
+
+.content-contact-wrapper {
+    grid-column: 1 / 12;
+    grid-row: 2; 
+}
+
+input, textarea {
+    background-color: $color-purple-transparent-lighter; 
+    border: 0; 
+    border-bottom: $border $color-purple; 
+    border-radius: $border-rounded; 
+    color: $color-purple;
+    font-family: "noto-sans-display", sans-serif;
+    font-weight: 400;
+    font-size: $font-size-body; 
+    outline: 0;
+    padding: 1vh 2vw; 
+}
+
+input[type=text], select, textarea {
+    box-sizing: border-box;
+    margin-bottom: 1vw; 
+    resize: vertical;
+    width: 100%; 
+  }
+  
+  input[type=submit] {
+    background-color: $color-purple; 
+    border-radius: $border-rounded;
+    color: $color-offwhite; 
+    outline: 0;
+    padding: 1vh 2vw; 
+    transition: 0.3s; 
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $color-offwhite;
+        color: $color-purple; 
+        cursor: pointer;
+    }
+  }
+
+  textarea {
+      min-height: 300px; 
+
+      &::placeholder {
+        color: $color-purple;
+    }
+  }
+

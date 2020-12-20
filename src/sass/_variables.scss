@@ -1,0 +1,33 @@
+$font-size-copyright: 8px;
+$font-size-footer: 14px;
+$font-size-header-link: 15px; 
+$font-size-body: 18px;
+$font-size-list: 22px;
+$font-size-header-description: 28px;
+$font-size-card-title: 36px;
+$font-size-header: 72px; 
+
+$border-rounded: 12px;
+$border: 2px solid;
+
+$color-offblack: #0A0908;
+$color-offwhite: #FCFCFC;
+$color-offgrey: #F1F1F1; 
+$color-grey: #ccc;
+
+$color-yellow: #f6a24c;
+$color-mint: #aed987;
+$color-magenta: #ff99ff;
+$color-navy: #6986c0;
+$color-purple: #500d76;  
+
+$color-purple-transparent-lighter: rgba(80, 13, 118, 0.05);  
+$color-purple-transparent: rgba(80, 13, 118, 0.1);  
+$color-purple-translucent:  rgba(80, 13, 118, 0.3);  
+$color-slate: #3b4127;
+
+$color-text-body: $color-purple;
+$color-text-link: $color-mint;
+$color-text-link-visited: $color-text-body;
+
+$transition-default: all 300ms;

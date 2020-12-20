@@ -1,0 +1,36 @@
+.site-grid-404 {
+    display: grid; 
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto;
+    grid-gap: 1rem; 
+    width: 100%; 
+}
+
+
+.header-404-wrapper {
+    grid-column: 1 / 3;
+    grid-row: 1; 
+}
+
+    a.button-home {
+        border: 2px solid $color-purple; 
+        border-radius: 12px; 
+        color: $color-text-body;
+        display: block; 
+        font-size: 20px;
+        font-weight: 500;
+        grid-column: 1 / 2;
+        grid-row: 2; 
+        padding: 1vh 2vw;
+        text-decoration: none;
+        text-align: center; 
+        transition: 0.3s;
+    
+        &:hover {
+          background-color: $color-purple; 
+          color: $color-offwhite; 
+        }
+    }
+
+
+
